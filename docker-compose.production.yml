@@ -34,7 +34,8 @@ services:
     image: artemon1981/kittygram_gateway
     env_file: .env
     depends_on:
-      - frontend  
+      - frontend
+      - backend
     ports:
       - 9000:80
     volumes:
